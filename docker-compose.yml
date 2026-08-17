@@ -1,0 +1,18 @@
+# Explicit project name so the container is always paper_qa-db-1, regardless of
+# what the folder is called or where it's cloned.
+name: paper_qa
+
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    container_name: paper_qa-db
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: paperqa
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

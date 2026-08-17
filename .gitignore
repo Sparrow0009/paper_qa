@@ -1,0 +1,31 @@
+# Secrets - never commit these
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data
+*.pdf
+
+# Raw screen recordings. The compressed versions in docs/ are committed.
+*.mkv
+/*.mp4

@@ -1,0 +1,423 @@
+[
+  {
+    "question": "What are the three techniques through which Moving Target Defence can be applied?",
+    "expected_pages": [
+      13,
+      14
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "randomisation, diversity, dynamism",
+    "section": "3.4 Moving Target Defence",
+    "grading": "unverified - two candidate pages, narrow after checking the PDF"
+  },
+  {
+    "question": "What are the three IDS placement approaches described?",
+    "expected_pages": [
+      17,
+      18
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "centralised, distributed, hybrid",
+    "section": "4.3 Continuous monitoring and analysis",
+    "grading": "unverified - two candidate pages, narrow after checking the PDF"
+  },
+  {
+    "question": "What is DICE and which organisation created it?",
+    "expected_pages": [
+      7,
+      8
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "Device Identifier Composition Engine, created by the Trusted Computing Group as a lightweight alternative to TPM; first adopted by Microsoft for Azure IoT",
+    "section": "3.1 Hardware self-protection",
+    "grading": "unverified - two candidate pages, narrow after checking the PDF"
+  },
+  {
+    "question": "How does Spitzner define a honeypot?",
+    "expected_pages": [
+      18
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "a resource whose value lies in being probed, attacked or compromised",
+    "section": "4.3.2 Honeypots"
+  },
+  {
+    "question": "What is a Hardware Trojan?",
+    "expected_pages": [
+      7
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "a circuit inserted into a larger one to alter its function and implement malicious behaviour",
+    "section": "3.1 Hardware self-protection"
+  },
+  {
+    "question": "What are the three MTD design issues the proposed framework addresses?",
+    "expected_pages": [
+      14
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "What to move, When to move, How to move",
+    "section": "3.4 Moving Target Defence"
+  },
+  {
+    "question": "What is Honware and how does it differ from IoTPOT and Conpot?",
+    "expected_pages": [
+      18,
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "easy",
+    "expected_answer": "a high-interaction honeypot that extracts firmware images automatically to emulate device behaviour; unlike IoTPOT, Conpot and HoneyPhy it uses actual firmware rather than emulating only specific application and network layers",
+    "section": "4.3.2 Honeypots"
+  },
+  {
+    "question": "Why are TPMs problematic for resource-constrained IoT devices?",
+    "expected_pages": [
+      7,
+      8
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "cost, plus additional space and power consumption",
+    "section": "3.1 Hardware self-protection",
+    "grading": "unverified - two candidate pages, narrow after checking the PDF"
+  },
+  {
+    "question": "What is the main drawback of Network Coding based techniques?",
+    "expected_pages": [
+      28
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "they rely on trust among nodes; a malicious node can forge encoded packets and the receiver may fail to detect pollution attacks",
+    "section": "6.4 Network Coding"
+  },
+  {
+    "question": "How do honeypots differ from IDS in terms of false positive rates?",
+    "expected_pages": [
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "honeypots see no legitimate traffic so nearly all activity is malicious, giving a low false positive rate, unlike traditional IDS which generate many false alerts",
+    "section": "4.3.2 Honeypots"
+  },
+  {
+    "question": "What is remote attestation and how does the process work?",
+    "expected_pages": [
+      8
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "a trusted verifier assures the integrity of an untrusted prover; the prover sends evidence of its memory state and the verifier matches it against the expected state",
+    "section": "3.1 Hardware self-protection"
+  },
+  {
+    "question": "What are the two main categories of Hardware Trojan detection?",
+    "expected_pages": [
+      7
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "pre-silicon (validating the IC at design stage) and post-silicon (verifying the fabricated IC), the latter split into destructive and non-destructive techniques",
+    "section": "3.1 Hardware self-protection"
+  },
+  {
+    "question": "What is a TOCTOU issue and why does it matter for device certification?",
+    "expected_pages": [
+      6
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "time-of-check, time-of-use: even after a certificate is verified, there is no guarantee nothing has interfered with the device's integrity since the last check",
+    "section": "3 Device self-protection"
+  },
+  {
+    "question": "What three criteria are proposed for evaluating the effectiveness of MTD techniques?",
+    "expected_pages": [
+      14
+    ],
+    "type": "answerable",
+    "difficulty": "medium",
+    "expected_answer": "timeliness, unpredictability and coverage",
+    "section": "3.4 Moving Target Defence"
+  },
+  {
+    "question": "What recurring trade-off appears across the hardware protection, MTD and network coding sections?",
+    "expected_pages": [
+      8,
+      9,
+      10,
+      15,
+      28
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "expected_answer": "security gains versus cost and overhead on already resource-constrained devices; appears in 3.1, 3.4 and 6.4",
+    "section": "spans 3.1, 3.4, 6.4",
+    "grading": "lenient - answer spans several sections, any listed page counts"
+  },
+  {
+    "question": "Why do the authors say MTD remains tentative in IoT environments?",
+    "expected_pages": [
+      14
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "expected_answer": "it assumes the defender has sufficient asset and configuration control to change network configuration without causing misconfigurations, which is unrealistic at scale in heterogeneous IoT; existing IoT MTD strategies are judged weak",
+    "section": "3.4 Moving Target Defence"
+  },
+  {
+    "question": "What weaknesses do low-interaction honeypots have?",
+    "expected_pages": [
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "expected_answer": "easily fingerprinted at internet scale due to off-the-shelf protocol libraries, often out of date, standardised deployment scripts make them detectable, and lower fidelity emulation",
+    "section": "4.3.2 Honeypots"
+  },
+  {
+    "question": "In what ways can a defence mechanism itself increase risk to an IoT system?",
+    "expected_pages": [
+      7,
+      15,
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "expected_answer": "inadequately deployed honeypots attract attackers; MTD can cause misconfigurations; monitoring and hardware protection impose overhead that constrains device use",
+    "section": "spans 3.1, 3.4, 4.3.2",
+    "grading": "lenient - answer spans several sections, any listed page counts"
+  },
+  {
+    "question": "What accuracy did the authors' intrusion detection model achieve in their experiments?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "hard",
+    "expected_answer": "REFUSAL - this is a survey paper, the authors ran no experiments"
+  },
+  {
+    "question": "Which IoT vendors did the authors find to be most vulnerable in their testing?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "hard",
+    "expected_answer": "REFUSAL - no vendor testing is performed"
+  },
+  {
+    "question": "What does GDPR require of IoT device manufacturers?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "medium",
+    "expected_answer": "REFUSAL - regulation is not covered in this paper"
+  },
+  {
+    "question": "What is the average financial cost of an IoT security breach?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "medium",
+    "expected_answer": "REFUSAL - no cost figures are given"
+  },
+  {
+    "question": "How do I configure a firewall on my home router?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "medium",
+    "expected_answer": "REFUSAL - practical configuration guidance is not in scope"
+  },
+  {
+    "question": "Who won the 2018 FIFA World Cup?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "easy",
+    "expected_answer": "REFUSAL - should be caught by the similarity floor"
+  },
+  {
+    "question": "What is the capital of Australia?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "easy",
+    "expected_answer": "REFUSAL - should be caught by the similarity floor"
+  },
+  {
+    "question": "If someone messed with the chips at the factory before the device shipped, does the paper cover that?",
+    "expected_pages": [
+      7
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "supply-chain attacks and Hardware Trojans; countermeasures include detection, Design for Trust and split manufacturing",
+    "section": "3.1 Hardware self-protection",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Can an attacker work out what a device is doing just by watching how much power it uses?",
+    "expected_pages": [
+      7,
+      9
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "yes - side-channel attacks exploit power consumption, timing and electromagnetic emissions; mitigated by randomisation, data masking, noise and shielding",
+    "section": "3.1 Hardware self-protection",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Those security chips sound like they'd drain the battery. Is there a lighter option?",
+    "expected_pages": [
+      8
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "DICE - a lightweight standard from the Trusted Computing Group, usable on small microcontrollers where TPMs are too costly in space and power",
+    "section": "3.1 Hardware self-protection",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "How can you be sure a device hasn't been interfered with since the last time you checked it?",
+    "expected_pages": [
+      6,
+      8
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "this is the TOCTOU problem; remote attestation lets a verifier check the prover's current memory state against the expected one",
+    "section": "3 Device self-protection / 3.1",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "If a hacker gets into one gadget on my network, can they reach everything else?",
+    "expected_pages": [
+      20,
+      23
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "this is lateral movement; isolation, network segmentation and micro-segmentation confine devices to reduce the spread",
+    "section": "5 Device isolation and segmentation",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Is there a way to lure attackers into wasting their time on something fake?",
+    "expected_pages": [
+      18
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "honeypots - a trap that attracts attackers to fake vulnerabilities, giving early warning and intelligence on their methods",
+    "section": "4.3.2 Honeypots",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Could those traps ever make things worse rather than better?",
+    "expected_pages": [
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "yes - badly deployed honeypots attract attackers and increase risk, so they should complement rather than replace IDS and firewalls",
+    "section": "4.3.2 Honeypots",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Can a skilled attacker tell they are being watched by a decoy and just walk away?",
+    "expected_pages": [
+      19
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "yes - low and medium interaction honeypots were fingerprinted at internet scale due to off-the-shelf protocol libraries, outdated software and standardised deployment scripts",
+    "section": "4.3.2 Honeypots",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Why not just keep shuffling the setup around so attackers can never get a fix on it?",
+    "expected_pages": [
+      13,
+      14
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "that is Moving Target Defence, via randomisation, diversity and dynamism - but it assumes configuration control the defender rarely has at IoT scale",
+    "section": "3.4 Moving Target Defence",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "On a patchy wireless link where packets go missing, how do they get the data back?",
+    "expected_pages": [
+      28
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "network coding - nodes send linear combinations of packets, providing redundancy that recovers losses without retransmission",
+    "section": "6.4 Network Coding",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Does chopping the network into pieces break anything that used to work?",
+    "expected_pages": [
+      23
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "yes - micro-segmentation blocked 2.16% of valid network flows between devices while cutting the attack surface by 65.85%",
+    "section": "5.3 Host segmentation",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Did anyone actually put a number on how much these defences help?",
+    "expected_pages": [
+      23
+    ],
+    "type": "answerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "micro-segmentation reduced the attack surface exposed to a Mirai-infected webcam by 65.85% compared to the baseline configuration",
+    "section": "5.3 Host segmentation",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Which of these defences should I use for my smart doorbell at home?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "REFUSAL - the paper surveys techniques, it gives no product-specific recommendations",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "How much does it cost to roll out micro-segmentation across a network?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "REFUSAL - overhead is discussed qualitatively, no costs are given",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  },
+  {
+    "question": "Which of the techniques covered performed best in the authors' benchmarks?",
+    "expected_pages": [],
+    "type": "unanswerable",
+    "difficulty": "hard",
+    "style": "paraphrased",
+    "expected_answer": "REFUSAL - it is a survey, the authors ran no benchmarks",
+    "grading": "unverified - pages inferred from section mapping, confirm in the PDF"
+  }
+]
