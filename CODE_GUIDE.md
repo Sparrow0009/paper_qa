@@ -123,6 +123,9 @@ Why it exists: normal search finds the chunks closest in meaning to the question
 Looks for phrases like "list all", "everything", "summarise this document", "main points". If found, use the summarise path.
 It's simple word-matching rather than asking the model to decide, because it's instant and free, and a wrong guess just falls back to normal search, which still gives a decent answer.
 
+**Constants at the top**
+`BATCH_SIZE = 20` chunks per map call, `MAX_WORKERS = 6` batches running at once, `MAX_CHUNKS = 400` as a safety cap so a huge document can't quietly cost a lot, and `TEMPERATURE = 0` so repeated runs give the same answer.
+
 **`_batch(chunks, size)`**
 Splits a long list of chunks into groups of 20. The leading underscore is a convention meaning "internal helper, not meant to be used from other files".
 
@@ -160,7 +163,8 @@ The web API. Each function below is a URL the frontend can call.
 Returns `{"status": "ok"}`. A quick way to check the server is alive.
 
 **`upload(file)`** on `POST /upload`
-Takes a PDF, pulls the text out page by page, strips the references, chunks it, embeds it, saves it. Returns the new document id plus how many pages and chunks it created.
+Takes a PDF, pulls the text out page by page, strips the references, chunks it, embeds it, saves it.
+Returns the new document id, the total page count, `indexed_pages` (how many were actually chunked after the bibliography was removed), `references_start` (the page the cut happened on, or null), and the chunk count. The UI shows those in its confirmation line.
 
 **`Question`**
 Describes what an `/ask` request must contain: a question, and optionally a document id. FastAPI uses it to reject malformed requests automatically.

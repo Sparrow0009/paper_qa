@@ -1,0 +1,9 @@
+# Normalise line endings so Windows edits don't show every line as changed.
+* text=auto eol=lf
+
+# Binary files: never touch these.
+*.png binary
+*.jpg binary
+*.gif binary
+*.mp4 binary
+*.pdf binary
